@@ -1,8 +1,9 @@
 ---
 description: What changed since the first release?
+icon: newspaper
 ---
 
-# 🗞️ Version Release Notes
+# Version Release Notes
 
 In `uprepos`, there have been several releases made to this script. The first public version of this script, v1.0, is released on August 8, 2022. These changes include:
 

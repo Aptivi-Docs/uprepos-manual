@@ -1,8 +1,9 @@
 ---
 description: Welcome to uprepos!
+icon: hand-wave
 ---
 
-# 👋 Welcome!
+# Welcome!
 
 Welcome to `uprepos`, which is a very small `bash` script that lets you update all your repositories found under a folder containing all your Git repositories.
 

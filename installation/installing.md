@@ -1,8 +1,9 @@
 ---
 description: How to install this script.
+icon: compact-disc
 ---
 
-# 📀 Installing
+# Installing
 
 Installing this script is easy. To install it, follow these steps, assuming that you have either `CURL` or `wget` installed on your Linux system:
 
