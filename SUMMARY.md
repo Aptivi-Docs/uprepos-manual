@@ -16,5 +16,5 @@
 
 ***
 
-* [Report an issue](https://github.com/Aptivi/uprepos/issues/new)
-* [Source code](https://github.com/Aptivi/uprepos)
+* [Report an issue](https://gitlab.com/aptivi/powertools/linux/uprepos/-/issues)
+* [Source code](https://gitlab.com/aptivi/powertools/linux/uprepos)
