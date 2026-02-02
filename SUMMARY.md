@@ -1,10 +1,7 @@
 # Table of contents
 
 * [Welcome!](README.md)
-
-## Releases
-
-* [Version Release Notes](releases/version-release-notes.md)
+* [Version Release Notes](version-release-notes.md)
 
 ## Installation
 

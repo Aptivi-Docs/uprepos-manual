@@ -5,40 +5,42 @@ icon: compact-disc
 
 # Installing
 
-Installing this script is easy. To install it, follow these steps, assuming that you have either `CURL` or `wget` installed on your Linux system:
+Installing this script is easy. To install it, follow these steps, assuming that you have either `curl` or `wget` installed on your Linux system.
 
-## Local and System-wide
+<details>
 
-There are two ways to install this script on your system. If you want to make this script available to all the users on your Linux system, be sure to install it on your home directory like this:
+<summary>Local installation</summary>
 
+If you want to install this script to your local home directory, you'll need to execute one of the below commands, depending on what you have:
+
+```console
+$ curl -fsSL https://raw.githubusercontent.com/Aptivi/uprepos/main/uprepos > $HOME/.local/bin/uprepos
+$ wget -O$HOME/.local/bin/uprepos https://raw.githubusercontent.com/Aptivi/uprepos/main/uprepos
 ```
-$ curl -fsSL https://raw.githubusercontent.com/Aptivi/uprepos/main/uprepos > $HOME/uprepos
-$ chmod +x $HOME/uprepos
+
+After that, you'll need to execute the below command to ensure that the script is executable:
+
+```console
+$ chmod +x $HOME/.local/bin/uprepos
 ```
 
-If you want to make this script available to all of the users installed, follow these two scripts as root (`sudo`):
+</details>
 
-```
+<details>
+
+<summary>System-wide installation</summary>
+
+If you want to make this script available to all users on your system, you'll need to execute one of the below commands, depending on what you have:
+
+```console
 $ curl -fsSL https://raw.githubusercontent.com/Aptivi/uprepos/main/uprepos | sudo tee /usr/local/bin/uprepos
-$ sudo chmod +x /usr/local/bin/uprepos
-```
-
-If you prefer using wget to install the script, follow these steps:
-
-* For local installs
-
-```
-$ wget -O$HOME/uprepos https://raw.githubusercontent.com/Aptivi/uprepos/main/uprepos
-$ chmod +x $HOME/uprepos
-```
-
-* For system-wide installs
-
-```
 $ sudo wget -O/usr/local/bin/uprepos https://raw.githubusercontent.com/Aptivi/uprepos/main/uprepos
+```
+
+After that, you'll need to execute the below command to ensure that the script is executable:
+
+```console
 $ sudo chmod +x /usr/local/bin/uprepos
 ```
 
-{% hint style="info" %}
-For MinGW, WSL, and Git Bash installs, only the local install is supported.
-{% endhint %}
+</details>

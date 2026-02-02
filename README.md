@@ -7,11 +7,12 @@ icon: hand-wave
 
 Welcome to `uprepos`, which is a very small `bash` script that lets you update all your repositories found under a folder containing all your Git repositories.
 
-To use this script, you can just use:
+It's an abstraction of a set of commands that you'll have to execute to update all repositories in a folder so that you can save your time from having to manually update them. `uprepos` attempts to execute the following commands for every directory:
 
-```shell
-$ uprepos
-$ uprepos Path/To/Repos
+```shellsession
+$ git -C Path/To/Repos fetch
+$ git -C Path/To/Repos pull --recurse-submodule
+$ git -C Path/To/Repos submodule update --remote
 ```
 
-To learn how to use this script, go to any link in the left side of your screen.
+Remembering and writing all those commands manually is time-consuming, especially if you need a quick shortcut to all the above commands.
